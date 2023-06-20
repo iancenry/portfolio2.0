@@ -60,7 +60,6 @@ body {
 .section {
   padding: 4rem 6rem;
   height: 100svh;
-  background: $sec-background;
 }
 
 .headtext__firacode {
@@ -72,7 +71,7 @@ body {
 
 .p__firacode {
   font-family: 'Fira Code', monospace, sans-serif;
-  color: $gray;
+  color: #fff;
   font-weight: 400;
   letter-spacing: 0.4em;
   line-height: 1.5625rem;
