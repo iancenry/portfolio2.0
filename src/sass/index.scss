@@ -2,6 +2,12 @@
 @import 'mixins';
 @import 'animate.css';
 
+/*--------------------*/
+
+/* GLOBAL TYPOGRAPHY AND STYLE */
+
+/*--------------------*/
+
 @font-face {
   font-family: 'Fira Code';
   src: url('../assets/fonts/FiraCode-Regular.ttf') format('truetype');
@@ -37,16 +43,47 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   padding: 0;
   line-height: 1.3;
-  // change
   font-family: 'Fira Code', monospace, sans-serif;
   font-size: 18px;
   font-weight: 300;
+  background: $pry-background;
+  color: $white;
+}
+
+.section {
+  padding: 4rem 6rem;
+  height: 100svh;
+  background: $sec-background;
+}
+
+.headtext__firacode {
+  font-family: 'Fira Code', monospace, sans-serif;
+  font-weight: 600;
+  font-size: $font-large;
+  line-height: 2.635rem;
+}
+
+.p__firacode {
+  font-family: 'Fira Code', monospace, sans-serif;
+  color: $gray;
+  font-weight: 400;
+  letter-spacing: 0.4em;
+  line-height: 1.5625rem;
+  font-size: $font-small;
+}
+
+.h3__firacode {
+  font-family: 'Fira Code', monospace, sans-serif;
+  font-weight: 500;
+  font-size: $font-med;
+  line-height: 2.625rem;
 }
 
 //flexbox
