@@ -1,0 +1,95 @@
+@import 'variables';
+@import 'mixins';
+@import 'animate.css';
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('../assets/fonts/FiraCode-Regular.ttf') format('truetype');
+  // 400
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('../assets/fonts/FiraCode-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('../assets/fonts/FiraCode-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  // user can control zoom level
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  // change
+  font-family: 'Fira Code', monospace, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+//flexbox
+.flex {
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+button,
+.button {
+  padding: 0.875rem 2.1875rem;
+  background: linear-gradient(to right, red, blue);
+  border-radius: 50px;
+  border: 0;
+  color: $white;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+//Visibility
+.hide-for-mobile {
+  // hide for tablet and mobile
+  @include breakpoint-down(medium);
+}
+
+.hide-for-mobile {
+  //hide for desktop viewport widths
+  @include breakpoint-down(small);
+}
