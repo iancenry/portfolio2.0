@@ -44,3 +44,4 @@ const Navbar = () => {
 export default Navbar
 
 //TODO: add smallscreen navbar and put login to side as icon not words
+//TODO add blog route
