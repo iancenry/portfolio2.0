@@ -58,7 +58,7 @@ body {
 }
 
 .section {
-  padding: 4rem 6rem;
+  padding: 4rem 25rem;
   height: 100svh;
 }
 
@@ -73,7 +73,7 @@ body {
   font-family: 'Fira Code', monospace, sans-serif;
   color: #fff;
   font-weight: 400;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.2em;
   line-height: 1.5625rem;
   font-size: $font-small;
 }
@@ -83,6 +83,10 @@ body {
   font-weight: 500;
   font-size: $font-med;
   line-height: 2.625rem;
+}
+
+span {
+  color: $primary;
 }
 
 //flexbox
@@ -100,6 +104,10 @@ body {
   &-ai-c {
     align-items: center;
   }
+
+  &-fd-c {
+    flex-direction: column;
+  }
 }
 
 a,
@@ -108,15 +116,15 @@ a:hover {
   text-decoration: none;
 }
 
-button,
-.button {
-  padding: 0.875rem 2.1875rem;
-  background: linear-gradient(to right, red, blue);
-  border-radius: 50px;
-  border: 0;
+.btn {
+  padding: 8px 16px;
+  background: $pry-background;
   color: $white;
-  font-weight: 400;
   cursor: pointer;
+  width: 148px;
+  height: 37px;
+  border: 1px solid #c778dd;
+  margin-top: 24px;
 }
 
 //Visibility
