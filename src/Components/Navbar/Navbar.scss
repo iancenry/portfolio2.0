@@ -22,3 +22,50 @@
     }
   }
 }
+
+.navbar--smallscreen {
+  .btn-hamburger {
+    align-items: end;
+    cursor: pointer;
+    z-index: 3;
+
+    > span {
+      display: block;
+      height: 2px;
+      background-color: #c778dd;
+      margin-bottom: 5px;
+      transition: all 300ms ease-in-out;
+      // transform-origin: 2px 5px;
+    }
+
+    > span:first-child {
+      width: 24px;
+    }
+
+    > span:nth-child(2) {
+      width: 20px;
+    }
+
+    > span:last-child {
+      width: 16px;
+    }
+  }
+
+  &.open {
+    .btn-hamburger {
+      > span:first-child {
+        // transform: rotate(45deg);
+        transform: translateY(4px) rotate(45deg);
+      }
+
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+
+      > span:last-child {
+        transform: translateY(-2px) rotate(-45deg);
+        width: 24px;
+      }
+    }
+  }
+}
