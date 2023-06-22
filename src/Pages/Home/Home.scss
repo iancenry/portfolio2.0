@@ -1,0 +1,64 @@
+.hero {
+  .social-links {
+    position: absolute;
+    z-index: 4;
+    top: 15px;
+    left: 10px;
+    gap: 10px;
+
+    .line {
+      margin-left: 10px;
+      height: 100px;
+      width: 2px;
+      background: #abb2bf;
+    }
+  }
+
+  &__info {
+    width: 537px;
+    height: 227px;
+    margin-top: 200px;
+  }
+
+  &__image {
+    margin-top: 40px;
+    position: relative;
+
+    .hero-person {
+      z-index: 1;
+    }
+
+    .hero-pattern {
+      position: absolute;
+      left: 4px;
+      top: 80px;
+      z-index: -1;
+    }
+
+    .hero-dots {
+      position: absolute;
+      right: 4px;
+      top: 250px;
+      z-index: 2;
+    }
+
+    .current-work {
+      margin-top: -7px;
+      margin-left: 15px;
+      padding: 8px;
+      width: 402px;
+      height: 37px;
+      background: #282c33;
+      border: 1px solid #abb2bf;
+
+      &__mini-square {
+        width: 1.125rem;
+        height: 1.125rem;
+        flex-shrink: 0;
+        border: 1px solid var(--primary, #c778dd);
+        background: #282c33;
+        margin-right: 0.625rem;
+      }
+    }
+  }
+}
