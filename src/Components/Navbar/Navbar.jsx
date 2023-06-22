@@ -35,7 +35,11 @@ const Navbar = () => {
         </ul>
         {/* small scrren */}
         {/* /add classname open if toggled to switch styles to X */}
-        <div className="navbar--smallscreen hide-for-desktop  open">
+        <div
+          className={`navbar--smallscreen hide-for-desktop ${
+            toggleMenu && 'open'
+          }`}
+        >
           <div
             className="btn-hamburger flex flex-fd-c"
             onClick={() => setToggleMenu((prevValue) => !prevValue)}
@@ -45,25 +49,25 @@ const Navbar = () => {
             <span></span>
           </div>
           {toggleMenu && (
-            <div className="navbar--smallscreen_overlay">
-              <ul className="navbar--smallscreen__links flex flex-jc-c flex-ai-c hide-for-desktop">
+            <div className="navbar--smallscreen_overlay flex flex-jc-c">
+              <ul className="navbar--smallscreen__links flex flex-jc-c flex-fd-c hide-for-desktop">
                 <li>
-                  <Link to="." className="p__firacode">
+                  <Link to="." className="headtext__firacode">
                     <span>#</span>home
                   </Link>
                 </li>
                 <li className="p__firacode">
-                  <Link to="projects" className="p__firacode">
+                  <Link to="projects" className="headtext__firacode">
                     <span>#</span>projects
                   </Link>
                 </li>
                 <li className="p__firacode">
-                  <Link to="about" className="p__firacode">
+                  <Link to="about" className="headtext__firacode">
                     <span>#</span>about
                   </Link>
                 </li>
                 <li className="p__firacode">
-                  <Link to="contact" className="p__firacode">
+                  <Link to="contact" className="headtext__firacode">
                     <span>#</span>contact
                   </Link>
                 </li>
