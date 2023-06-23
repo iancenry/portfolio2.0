@@ -34,12 +34,7 @@ const Navbar = () => {
           </li>
         </ul>
         {/* small scrren */}
-        {/* /add classname open if toggled to switch styles to X */}
-        <div
-          className={`navbar--smallscreen hide-for-desktop ${
-            toggleMenu && 'open'
-          }`}
-        >
+        <div className={`navbar--smallscreen ${toggleMenu && 'open'}`}>
           <div
             className="btn-hamburger flex flex-fd-c"
             onClick={() => setToggleMenu((prevValue) => !prevValue)}
@@ -52,22 +47,38 @@ const Navbar = () => {
             <div className="navbar--smallscreen_overlay flex flex-jc-c">
               <ul className="navbar--smallscreen__links flex flex-jc-c flex-fd-c hide-for-desktop">
                 <li>
-                  <Link to="." className="headtext__firacode">
+                  <Link
+                    to="."
+                    className="headtext__firacode"
+                    onClick={() => setToggleMenu((prevValue) => !prevValue)}
+                  >
                     <span>#</span>home
                   </Link>
                 </li>
                 <li className="p__firacode">
-                  <Link to="projects" className="headtext__firacode">
+                  <Link
+                    to="projects"
+                    className="headtext__firacode"
+                    onClick={() => setToggleMenu((prevValue) => !prevValue)}
+                  >
                     <span>#</span>projects
                   </Link>
                 </li>
                 <li className="p__firacode">
-                  <Link to="about" className="headtext__firacode">
+                  <Link
+                    to="about"
+                    className="headtext__firacode"
+                    onClick={() => setToggleMenu((prevValue) => !prevValue)}
+                  >
                     <span>#</span>about
                   </Link>
                 </li>
                 <li className="p__firacode">
-                  <Link to="contact" className="headtext__firacode">
+                  <Link
+                    to="contact"
+                    className="headtext__firacode"
+                    onClick={() => setToggleMenu((prevValue) => !prevValue)}
+                  >
                     <span>#</span>contact
                   </Link>
                 </li>
