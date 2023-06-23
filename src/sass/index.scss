@@ -44,7 +44,8 @@ html {
 *::after {
   box-sizing: inherit;
   scroll-behavior: smooth;
-  overflow: hidden;
+  // overflow: hidden;
+  font-family: 'Fira Code';
 }
 
 body {
@@ -138,4 +139,23 @@ a:hover {
 .hide-for-desktop {
   //hide for desktop viewport widths
   @include breakpoint-down(small);
+}
+
+@media screen and (max-width: 2000px) {
+}
+
+/* 0-900 */
+@media screen and (max-width: 900px) {
+  .section {
+    padding: 1rem 7rem;
+    height: 100svh;
+  }
+}
+
+/* 0-650 */
+@media screen and (max-width: 650px) {
+  .section {
+    padding: 0 4rem;
+    height: 100svh;
+  }
 }
