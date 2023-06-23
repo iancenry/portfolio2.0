@@ -14,51 +14,120 @@
     }
   }
 
-  &__info {
-    width: 537px;
-    height: 227px;
-    margin-top: 200px;
-  }
+  &__content {
+    flex-wrap: wrap;
 
-  &__image {
-    margin-top: 40px;
-    position: relative;
-
-    .hero-person {
-      z-index: 1;
+    &__info {
+      width: 540px;
+      height: 227px;
+      margin-top: 200px;
     }
 
-    .hero-pattern {
-      position: absolute;
-      left: 4px;
-      top: 80px;
-      z-index: -1;
-    }
+    &__image {
+      margin-top: 40px;
+      position: relative;
 
-    .hero-dots {
-      position: absolute;
-      right: 4px;
-      top: 250px;
-      z-index: 2;
-    }
+      .hero-person {
+        z-index: 1;
+      }
 
-    .current-work {
-      margin-top: -7px;
-      margin-left: 15px;
-      padding: 8px;
-      width: 402px;
-      height: 37px;
-      background: #282c33;
-      border: 1px solid #abb2bf;
+      .hero-pattern {
+        position: absolute;
+        left: 4px;
+        top: 80px;
+        z-index: -1;
+      }
 
-      &__mini-square {
-        width: 1.125rem;
-        height: 1.125rem;
-        flex-shrink: 0;
-        border: 1px solid var(--primary, #c778dd);
+      .hero-dots {
+        position: absolute;
+        right: 4px;
+        top: 250px;
+        z-index: 2;
+      }
+
+      .current-work {
+        margin-top: -7px;
+        margin-left: 15px;
+        padding: 8px;
+        width: 402px;
+        height: 37px;
         background: #282c33;
-        margin-right: 0.625rem;
+        border: 1px solid #abb2bf;
+
+        &__mini-square {
+          width: 1.125rem;
+          height: 1.125rem;
+          flex-shrink: 0;
+          border: 1px solid var(--primary, #c778dd);
+          background: #282c33;
+          margin-right: 0.625rem;
+        }
       }
     }
   }
+
+  &__quote-wrapper {
+    position: relative;
+    display: inline-flex;
+    padding: 1.5rem;
+    border: 1px solid var(--gray, #abb2bf);
+    overflow: visible;
+    margin-top: 100px;
+    margin-left: 25%;
+
+    .upper-quote {
+      position: absolute;
+      top: -15px;
+    }
+
+    .lower-quote {
+      position: absolute;
+      bottom: -15px;
+      right: 23px;
+    }
+
+    &:after {
+      content: 'Dr.Who';
+      position: absolute;
+      right: 0;
+      bottom: -56px;
+      padding: 1.3rem;
+      border: 1px solid var(--gray, #abb2bf);
+      z-index: -1;
+    }
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  .hero__content {
+    flex-wrap: wrap;
+  }
+}
+
+/* 0-900 */
+@media screen and (max-width: 900px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__content {
+      &__info {
+        min-width: 90%;
+        margin-top: 20px;
+      }
+
+      &__image {
+        margin-left: 10%;
+        margin-top: 20px;
+      }
+    }
+    &__quote-wrapper {
+      margin-left: 0;
+    }
+  }
+}
+
+/* 0-650 */
+@media screen and (max-width: 650px) {
 }
