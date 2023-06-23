@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <header>
       <nav className="navbar flex flex-jc-sb flex-ai-c">
-        <div className="navbar__logo">
+        <div className="navbar__logo flex">
           <img src="/src/assets/images/logo.png" alt="portfolio logo" />
         </div>
         <ul className="navbar__links flex flex-jc-c flex-ai-c hide-for-mobile">

@@ -3,10 +3,6 @@
   padding: 1rem 25rem;
 
   &__logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
     > img {
       width: 72px;
     }
@@ -54,6 +50,7 @@
 
   &.open {
     .btn-hamburger {
+      animation: bounce 600ms ease-in-out forwards;
       > span:first-child {
         transform: translateY(7px) rotate(45deg);
       }
@@ -77,10 +74,35 @@
     left: 0;
     background: #282c33;
     z-index: 3;
+    opacity: 0;
+    animation: fadeIn 600ms ease-in-out forwards;
 
     .navbar--smallscreen__links {
       list-style: none;
       margin-right: 20px;
+      animation: rubberBand 800ms ease-in-out forwards;
     }
   }
+}
+
+@media screen and (min-width: 1600px) {
+  .navbar--smallscreen {
+    display: none;
+  }
+}
+
+/* 0-900 */
+@media screen and (max-width: 900px) {
+  .navbar {
+    padding: 1rem 8rem;
+    &__links {
+      > li {
+        display: none;
+      }
+    }
+  }
+}
+
+/* 0-650 */
+@media screen and (max-width: 650px) {
 }
