@@ -3,3 +3,5 @@ const ProjectCard = () => {
 }
 
 export default ProjectCard
+
+// Take language array, header, brief description, image - export to data.js
