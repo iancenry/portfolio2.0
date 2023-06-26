@@ -1,4 +1,4 @@
-const ProjectCard = () => {
+const ProjectCard = ({ cover, title, description, languages }) => {
   return <div>ProjectCard</div>
 }
 
