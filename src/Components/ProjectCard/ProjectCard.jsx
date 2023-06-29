@@ -14,7 +14,9 @@ const ProjectCard = ({ cover, title, description, languages }) => {
       <div className="project-card__info flex flex-fd-c">
         <h3 className="h3__firacode">{title}</h3>
         <p className="p__firacode">{description}</p>
-        <Link className="btn">Live ~&gt;</Link>
+        <Link className="btn" target="_blank">
+          Live ~&gt;
+        </Link>
       </div>
     </div>
   )

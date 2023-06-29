@@ -1,6 +1,15 @@
 .project-card {
   align-items: flex-start;
   border: 1px solid var(--gray, #abb2bf);
+  min-height: 390px;
+  height: auto;
+  width: 330px;
+
+  &__image {
+    > img {
+      width: 100%;
+    }
+  }
 
   &__langauges {
     padding: 0.5rem;
