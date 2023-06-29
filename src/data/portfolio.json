@@ -1,18 +1,21 @@
 {
   "portfolio": [
     {
+      "id": 1,
       "cover": "src/assets/images/portfolio/project-1.png",
       "title": "ChertNodes",
       "description": "Minecraft servers hosting",
       "languages": ["HTML", "SCSS", "Python", "Flask"]
     },
     {
+      "id": 2,
       "cover": "src/assets/images/portfolio/project-2.png",
       "title": "ProtectX",
       "description": "Discord anti-crash bot",
       "languages": ["HTML", "SCSS", "Python", "Flask"]
     },
     {
+      "id": 3,
       "cover": "src/assets/images/portfolio/project-3.png",
       "title": "Kahoot Answers Viewer",
       "description": "Get answers to your kahoot quiz",

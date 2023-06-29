@@ -13,6 +13,16 @@ const Home = () => {
       .then((data) => setPortfolioData(data.portfolio))
   }, [])
 
+  const homePortfolios = portfolioData.map((portfolio) => (
+    <ProjectCard
+      key={portfolio.id}
+      cover={portfolio.cover}
+      title={portfolio.title}
+      description={portfolio.description}
+      languages={portfolio.languages}
+    />
+  ))
+
   return (
     <>
       <section className="section hero">
@@ -85,7 +95,7 @@ const Home = () => {
           <SubHeading subheading={'projects'} />
           <p className="p__h3__firacode">View all ~~&gt;</p>
         </div>
-        <div className="project-card">{/* call ProjectCard in map */}</div>
+        <div className="project-card">{homePortfolios}</div>
       </section>
     </>
   )
