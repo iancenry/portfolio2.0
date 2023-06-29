@@ -1,9 +1,18 @@
 import { Link } from 'react-router-dom'
 import './Home.scss'
 import { FaGithub, FaLinkedin, FaDoorOpen } from 'react-icons/fa'
-import { SubHeading } from '../../Components'
+import { SubHeading, ProjectCard } from '../../Components'
+import { useEffect, useState } from 'react'
 
 const Home = () => {
+  const [portfolioData, setPortfolioData] = useState({})
+
+  useEffect(() => {
+    fetch('src/data/portfolio.json')
+      .then((res) => res.json())
+      .then((data) => setPortfolioData(data.portfolio))
+  }, [])
+
   return (
     <>
       <section className="section hero">
@@ -76,6 +85,7 @@ const Home = () => {
           <SubHeading subheading={'projects'} />
           <p className="p__h3__firacode">View all ~~&gt;</p>
         </div>
+        <div className="project-card">{/* call ProjectCard in map */}</div>
       </section>
     </>
   )
