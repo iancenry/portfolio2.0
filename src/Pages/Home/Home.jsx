@@ -97,6 +97,11 @@ const Home = () => {
         </div>
         <div className="project-cards flex flex-jc-sb ">{homePortfolios}</div>
       </section>
+      <section className="section skills">
+        <div className="section__subheading">
+          <SubHeading subheading={'skills'} />
+        </div>
+      </section>
     </>
   )
 }
