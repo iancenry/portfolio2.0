@@ -12,7 +12,7 @@
       "cover": "src/assets/images/portfolio/project-2.png",
       "title": "ProtectX",
       "description": "Discord anti-crash bot",
-      "languages": ["HTML", "SCSS", "Python", "Flask"]
+      "languages": ["React", "Express", "HTML", "SCSS", "Python", "Flask"]
     },
     {
       "id": 3,
