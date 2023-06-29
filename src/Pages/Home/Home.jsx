@@ -5,15 +5,15 @@ import { SubHeading, ProjectCard } from '../../Components'
 import { useEffect, useState } from 'react'
 
 const Home = () => {
-  const [portfolioData, setPortfolioData] = useState({})
+  const [portfolioData, setPortfolioData] = useState()
 
   useEffect(() => {
-    fetch('src/data/portfolio.json')
+    fetch('/src/data/portfolio.json')
       .then((res) => res.json())
       .then((data) => setPortfolioData(data.portfolio))
   }, [])
 
-  const homePortfolios = portfolioData.map((portfolio) => (
+  const homePortfolios = portfolioData?.map((portfolio) => (
     <ProjectCard
       key={portfolio.id}
       cover={portfolio.cover}
@@ -95,7 +95,7 @@ const Home = () => {
           <SubHeading subheading={'projects'} />
           <p className="p__h3__firacode">View all ~~&gt;</p>
         </div>
-        <div className="project-card">{homePortfolios}</div>
+        <div className="project-cards flex flex-jc-sb ">{homePortfolios}</div>
       </section>
     </>
   )

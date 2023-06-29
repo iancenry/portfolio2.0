@@ -1,0 +1,14 @@
+.project-card {
+  align-items: flex-start;
+  border: 1px solid var(--gray, #abb2bf);
+
+  &__langauges {
+    padding: 0.5rem;
+  }
+
+  &__info {
+    padding: 1rem;
+    align-self: stretch;
+    border-top: 1px solid var(--gray, #abb2bf);
+  }
+}
