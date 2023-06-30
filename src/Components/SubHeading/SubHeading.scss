@@ -1,12 +1,10 @@
 .subtitle {
-  position: relative;
-
   &::after {
     content: '';
     position: absolute;
     margin-top: 16px;
     margin-left: 10px;
-    width: 31.9375rem;
+    width: 25rem;
     height: 0.0925rem;
     background: #c778dd;
   }
