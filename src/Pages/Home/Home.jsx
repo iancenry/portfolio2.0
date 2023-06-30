@@ -89,18 +89,17 @@ const Home = () => {
             With great power comes great electricity bill
           </p>
         </div>
+        <div className="hero__stack">{/* TODO add tech stack */}</div>
       </section>
       <section className="section projects">
-        <div className="section__subheading flex flex-ai-c flex-jc-sb">
+        <div className="flex flex-ai-c flex-jc-sb">
           <SubHeading subheading={'projects'} />
-          <p className="p__h3__firacode">View all ~~&gt;</p>
+          <Link className="h3__firacode">View all ~~&gt;</Link>
         </div>
-        <div className="project-cards flex flex-jc-sb ">{homePortfolios}</div>
+        <div className="project-cards">{homePortfolios}</div>
       </section>
       <section className="section skills">
-        <div className="section__subheading">
-          <SubHeading subheading={'skills'} />
-        </div>
+        <SubHeading subheading={'skills'} />
       </section>
     </>
   )
