@@ -44,18 +44,17 @@ html {
 *::after {
   box-sizing: inherit;
   scroll-behavior: smooth;
-  // overflow: hidden;
   font-family: 'Fira Code';
 }
 
 body {
   margin: 0;
   padding: 0;
-  line-height: 1.3;
-  font-size: 18px;
   background: $pry-background;
   color: $white;
   cursor: url(../assets/images/mouse-pointer.png), auto;
+  font-size: 100%;
+  //overflow-x: hidden;
 }
 
 .section {
@@ -75,7 +74,7 @@ body {
   font-family: 'Fira Code', monospace, sans-serif;
   color: $gray;
   font-weight: 400;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.2rem;
   line-height: 1.5625rem;
   font-size: $font-small;
 }
@@ -120,25 +119,31 @@ a:hover {
 }
 
 .btn {
-  padding: 8px 16px;
+  text-align: center;
+  padding: 8px 9px;
   background: $pry-background;
   color: $white;
   cursor: pointer;
-  width: 148px;
+  width: 165px;
   height: 37px;
-  border: 1px solid $primary;
-  margin-top: 24px;
+  border: 0.0625rem solid $primary;
+  margin-top: 1.5rem;
+  border-top-left-radius: 0.9375rem;
 }
 
 //Visibility
 .hide-for-mobile {
   // hide for tablet and mobile
-  @include breakpoint-down(medium);
+  @include breakpoint-down(medium) {
+    display: none;
+  }
 }
 
 .hide-for-desktop {
-  //hide for desktop viewport widths
-  @include breakpoint-down(small);
+  //hide for desktop viewport widths and up
+  @include breakpoint-up(large) {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 2000px) {
