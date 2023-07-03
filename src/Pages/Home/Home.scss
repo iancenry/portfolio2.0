@@ -2,8 +2,8 @@
   .social-links {
     position: absolute;
     z-index: 4;
-    top: 15px;
-    left: 10px;
+    top: 0.9375rem;
+    left: 0.625rem;
     gap: 10px;
 
     .line {
@@ -90,7 +90,7 @@
       content: 'Dr.Who';
       position: absolute;
       right: 0;
-      bottom: -56px;
+      bottom: -4.125rem;
       padding: 1.3rem;
       border: 1px solid var(--gray, #abb2bf);
       z-index: -1;
