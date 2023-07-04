@@ -88,6 +88,7 @@
 @media screen and (min-width: 1600px) {
   .navbar--smallscreen {
     display: none;
+    // add .hide-for-mobile instead of this media query
   }
 }
 
