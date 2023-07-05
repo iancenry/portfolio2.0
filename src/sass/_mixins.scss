@@ -1,16 +1,16 @@
 // /target a viewport and up  650, 900, 1600
 $breakpoints-up: (
-  'medium': '40.625em',
-  'large': '56.25em',
-  'x-large': '100em',
+  'medium': '40.625rem',
+  'large': '56.25rem',
+  'x-large': '100rem',
 );
 
-//target a viewport and down - 639px, 1023px, 1399px, 1600
+//target a viewport and down - 650px, 1023px, 1399px, 1600
 $breakpoints-down: (
-  'small': '39.9375em',
-  'medium': '63.9375em',
-  'large': '87.4375em',
-  'x-large': '100em',
+  'small': '40.625rem',
+  'medium': '63.9375rem',
+  'large': '87.4375rem',
+  'x-large': '100rem',
 );
 
 @mixin breakpoint-up($size) {
