@@ -1,3 +1,5 @@
+@import '../../sass/_mixins';
+
 .navbar {
   width: 100%;
   padding: 1rem 25rem;
@@ -16,6 +18,10 @@
       margin: 0 1rem;
       cursor: pointer;
     }
+  }
+
+  @include breakpoint-down(x-large) {
+    padding: 1rem 8rem;
   }
 }
 
@@ -83,27 +89,4 @@
       animation: rubberBand 800ms ease-in-out forwards;
     }
   }
-}
-
-@media screen and (min-width: 1600px) {
-  .navbar--smallscreen {
-    display: none;
-    // add .hide-for-mobile instead of this media query
-  }
-}
-
-/* 0-900 */
-@media screen and (max-width: 900px) {
-  .navbar {
-    padding: 1rem 8rem;
-    &__links {
-      > li {
-        display: none;
-      }
-    }
-  }
-}
-
-/* 0-650 */
-@media screen and (max-width: 650px) {
 }

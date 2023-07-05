@@ -34,7 +34,11 @@ const Navbar = () => {
           </li>
         </ul>
         {/* small scrren */}
-        <div className={`navbar--smallscreen ${toggleMenu && 'open'}`}>
+        <div
+          className={`navbar--smallscreen ${
+            toggleMenu && 'open'
+          } hide-for-desktop`}
+        >
           <div
             className="btn-hamburger flex flex-fd-c"
             onClick={() => setToggleMenu((prevValue) => !prevValue)}
