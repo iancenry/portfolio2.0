@@ -54,12 +54,19 @@ body {
   color: $white;
   cursor: url(../assets/images/mouse-pointer.png), auto;
   font-size: 100%;
-  //overflow-x: hidden;
 }
 
 .section {
   padding: 4rem 25rem;
   height: 100svh;
+
+  @include breakpoint-down(x-large) {
+    padding: 1rem 7rem;
+  }
+
+  @include breakpoint-down(medium) {
+    padding: 0 4rem;
+  }
 }
 
 .headtext__firacode {
@@ -134,33 +141,14 @@ a:hover {
 //Visibility
 .hide-for-mobile {
   // hide for tablet and mobile
-  @include breakpoint-down(medium) {
+  @include breakpoint-down(x-large) {
     display: none;
   }
 }
 
 .hide-for-desktop {
   //hide for desktop viewport widths and up
-  @include breakpoint-up(large) {
+  @include breakpoint-up(x-large) {
     display: none;
-  }
-}
-
-@media screen and (max-width: 2000px) {
-}
-
-/* 0-900 */
-@media screen and (max-width: 900px) {
-  .section {
-    padding: 1rem 7rem;
-    height: 100svh;
-  }
-}
-
-/* 0-650 */
-@media screen and (max-width: 650px) {
-  .section {
-    padding: 0 4rem;
-    height: 100svh;
   }
 }
