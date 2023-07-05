@@ -54,18 +54,23 @@ body {
   color: $white;
   cursor: url(../assets/images/mouse-pointer.png), auto;
   font-size: 100%;
+  overflow-x: hidden;
 }
 
 .section {
-  padding: 4rem 25rem;
+  width: 68%;
+  margin: 50px auto;
+  // padding: 4rem 25rem;
   height: 100svh;
 
   @include breakpoint-down(x-large) {
-    padding: 1rem 7rem;
+    // padding: 1rem 7rem;
+    width: 80%;
+    margin: 10px auto;
   }
 
   @include breakpoint-down(medium) {
-    padding: 0 4rem;
+    // padding: 0 3rem;
   }
 }
 
