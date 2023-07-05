@@ -2,6 +2,12 @@
   border: 1px solid var(--gray, #abb2bf);
   margin-bottom: 25px;
   width: 100%;
+  transition: all 150ms ease-in-out;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   &__image {
     overflow: hidden;
@@ -19,18 +25,4 @@
     padding: 1rem;
     border-top: 1px solid var(--gray, #abb2bf);
   }
-}
-
-@media screen and (min-width: 1600px) {
-}
-
-/* 0-900 */
-@media screen and (max-width: 900px) {
-  .project-card {
-    flex: 0 0 50%;
-  }
-}
-
-/* 0-650 */
-@media screen and (max-width: 650px) {
 }

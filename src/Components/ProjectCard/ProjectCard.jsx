@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 const ProjectCard = ({ cover, title, description, languages }) => {
   return (
-    <div className="project-card flex flex-fd-c">
+    <div className="project-card">
       <div className="project-card__image">
         <img src={cover} alt={`${title} project`} />
       </div>
