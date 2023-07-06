@@ -1,11 +1,21 @@
+@import '../../sass/mixins';
+
 .subtitle {
   &::after {
     content: '';
     position: absolute;
-    margin-top: 16px;
-    margin-left: 10px;
-    width: 25rem;
+    margin-top: 1.4375rem;
+    margin-left: 0.625rem;
+    width: 21.875rem;
     height: 0.0925rem;
     background: #c778dd;
+
+    @include breakpoint-down(x-large) {
+      width: 12.5rem;
+    }
+
+    @include breakpoint-down(medium) {
+      display: none;
+    }
   }
 }

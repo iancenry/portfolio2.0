@@ -69,7 +69,7 @@ const Home = () => {
             <div className="current-work flex flex-ai-c ">
               <div className="current-work__mini-square" />
               <p className="p__firacode">
-                Currently working on <b style={{ color: '#fff' }}>Portfolio</b>
+                Current project: <b style={{ color: '#fff' }}>APIs</b>
               </p>
             </div>
           </div>
@@ -89,7 +89,7 @@ const Home = () => {
             With great power comes great electricity bill
           </p>
         </div>
-        <div className="hero__stack">{/* TODO add tech stack */}</div>
+        <div className="hero__tech-stack">{/* TODO add tech stack */}</div>
       </section>
       <section className="section projects">
         <div className="flex flex-ai-c flex-jc-sb">
