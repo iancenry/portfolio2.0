@@ -41,7 +41,8 @@ const Home = () => {
         <div className="hero__content flex flex-jc-sb">
           <div className="hero__content__info flex flex-fd-c">
             <h1 className="headtext__firacode">
-              Ian Cenry is a <span>Full-Stack Developer</span> and
+              Hi, I&#39;m Ian Cenry. A passionate{' '}
+              <span>Full-Stack Developer</span> and
               <span> Software Engineer</span>
             </h1>
             <p className="p__firacode">
@@ -89,7 +90,6 @@ const Home = () => {
             With great power comes great electricity bill
           </p>
         </div>
-        <div className="hero__tech-stack">{/* TODO add tech stack */}</div>
       </section>
       <section className="section projects">
         <div className="flex flex-ai-c flex-jc-sb">
@@ -100,6 +100,27 @@ const Home = () => {
       </section>
       <section className="section skills">
         <SubHeading subheading={'skills'} />
+        <div className="skills__tech-stack flex flex-ai-c flex-jc-c">
+          <p className="p__firacode">
+            <b>Tech Stack | </b>
+          </p>
+          <div className="skills__tech-stack__logos">
+            <img src="src/assets/images/stack/html.png" alt="Html" />
+            <img
+              src="src/assets/images/stack/javascript.png"
+              alt="JavaScript"
+            />
+            <img src="src/assets/images/stack/css.png" alt="CSS" />
+            <img src="src/assets/images/stack/react.png" alt="React" />
+            <img
+              src="src/assets/images/stack/typescript.png"
+              alt="TypeScript"
+            />
+            <img src="src/assets/images/stack/python.png" alt="Python" />
+            <img src="src/assets/images/stack/node-js.png" alt="Node" />
+            <img src="src/assets/images/stack/sass.png" alt="Sass" />
+          </div>
+        </div>
       </section>
     </>
   )

@@ -152,4 +152,17 @@
 }
 
 .skills {
+  .skills__tech-stack {
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__logos {
+      > img {
+        width: 2.5rem;
+        &:not(:last-child) {
+          margin-right: 1.25rem;
+        }
+      }
+    }
+  }
 }
