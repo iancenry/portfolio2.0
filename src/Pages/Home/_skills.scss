@@ -1,0 +1,23 @@
+.skills {
+  .skills__tech-stack {
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__logos {
+      > img {
+        width: 3.125rem;
+        cursor: pointer;
+        filter: grayscale(100%);
+        transition: filter 500ms ease-in-out;
+
+        &:not(:last-child) {
+          margin-right: 1.25rem;
+        }
+
+        &:hover {
+          filter: grayscale(0);
+        }
+      }
+    }
+  }
+}

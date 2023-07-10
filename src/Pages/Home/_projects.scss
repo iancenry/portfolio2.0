@@ -1,0 +1,12 @@
+.projects {
+  div:nth-child(1) {
+    @include breakpoint-down(medium) {
+    }
+  }
+
+  .project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    gap: 1.875rem;
+  }
+}
