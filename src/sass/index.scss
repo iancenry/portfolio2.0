@@ -19,16 +19,16 @@
 
 @font-face {
   font-family: 'Fira Code';
-  src: url('../assets/fonts/FiraCode-SemiBold.ttf') format('truetype');
-  font-weight: 600;
+  src: url('../assets/fonts/FiraCode-Medium.ttf') format('truetype');
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Fira Code';
-  src: url('../assets/fonts/FiraCode-Medium.ttf') format('truetype');
-  font-weight: 500;
+  src: url('../assets/fonts/FiraCode-SemiBold.ttf') format('truetype');
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -45,9 +45,7 @@ html {
 *::after {
   box-sizing: inherit;
   scroll-behavior: smooth;
-  font-family: 'Fira Code';
-  // scrollbar-color: $pry-background;
-  // scrollbar-width: thin;
+  font-family: 'Fira Code', monospace, sans-serif;
 }
 
 body {
