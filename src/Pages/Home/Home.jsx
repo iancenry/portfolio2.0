@@ -1,19 +1,18 @@
 import { Link } from 'react-router-dom'
 import './Home.scss'
-import { FaGithub, FaLinkedin, FaDoorOpen } from 'react-icons/fa'
-import { SubHeading, ProjectCard } from '../../Components'
+import { SubHeading, ProjectCard, SkillsCard } from '../../Components'
 import { useEffect, useState } from 'react'
 
 const Home = () => {
-  const [portfolioData, setPortfolioData] = useState()
+  const [data, setData] = useState()
 
   useEffect(() => {
-    fetch('/src/data/portfolio.json')
+    fetch('/src/data/db.json')
       .then((res) => res.json())
-      .then((data) => setPortfolioData(data.portfolio))
+      .then((data) => setData(data))
   }, [])
 
-  const homePortfolios = portfolioData?.map((portfolio) => (
+  const homePortfolios = data?.portfolio.map((portfolio) => (
     <ProjectCard
       key={portfolio.id}
       cover={portfolio.cover}
@@ -23,21 +22,13 @@ const Home = () => {
     />
   ))
 
+  const skills = data?.skills.map((skill) => (
+    <SkillsCard key={skill.id} title={skill.cover} content={skill.content} />
+  ))
+
   return (
     <>
       <section className="section hero">
-        <div className="social-links flex flex-fd-c">
-          <div className="line" />
-          <Link to="https://github.com/iancenry" target="_blank">
-            <FaGithub color="#abb2bf" fontSize={20} />
-          </Link>
-          <Link to="." target="_blank">
-            <FaLinkedin color="#abb2bf" fontSize={20} />
-          </Link>
-          <Link to=".">
-            <FaDoorOpen color="#abb2bf" fontSize={20} />
-          </Link>
-        </div>
         <div className="hero__content flex flex-jc-sb">
           <div className="hero__content__info flex flex-fd-c">
             <h1 className="headtext__firacode">
@@ -100,7 +91,7 @@ const Home = () => {
       </section>
       <section className="section skills">
         <SubHeading subheading={'skills'} />
-        <div className="skills__tech-stack flex flex-ai-c flex-jc-c">
+        <div className="skills__tech-stack flex flex-jc-c">
           <p className="p__firacode">
             <b>Tech Stack | </b>
           </p>
@@ -121,6 +112,7 @@ const Home = () => {
             <img src="src/assets/images/stack/sass.png" alt="Sass" />
           </div>
         </div>
+        <div className="skills-cards">{skills}</div>
       </section>
     </>
   )
