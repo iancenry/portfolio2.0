@@ -26,27 +26,27 @@
   "skills": [
     {
       "id": 1,
-      "title": "languages",
-      "": ["TypeScript", "Python", "JavaScript"]
+      "title": "Languages",
+      "content": ["TypeScript", "Python", "JavaScript"]
     },
     {
       "id": 2,
-      "title": "databases",
+      "title": "Databases",
       "content": ["MySQL", "Mongo", "PostgreSQL", "Firebase"]
     },
     {
       "id": 3,
-      "title": "tools",
+      "title": "Tools",
       "content": ["VSCode", "Figma", "Git", "Tailwind", "Postman"]
     },
     {
       "id": 4,
-      "title": "frameworks",
+      "title": "Frameworks",
       "content": ["React", "Express", "Flask"]
     },
     {
       "id": 3,
-      "title": "others",
+      "title": "Others",
       "content": ["HTML", "CSS", "SCSS", "REST", "SQL"]
     }
   ]

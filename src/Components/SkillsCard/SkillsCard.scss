@@ -1,0 +1,15 @@
+.skill-card {
+  width: 13.125rem;
+  height: fit-content;
+  border: 0.0625rem solid #abb2bf;
+  line-height: 0.0625rem;
+
+  > h3,
+  p {
+    padding: 0rem 0.5rem;
+  }
+
+  > p {
+    border-top: 0.0625rem solid #abb2bf;
+  }
+}
