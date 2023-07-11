@@ -23,7 +23,7 @@ const Home = () => {
   ))
 
   const skills = data?.skills.map((skill) => (
-    <SkillsCard key={skill.id} title={skill.cover} content={skill.content} />
+    <SkillsCard key={skill.id} title={skill.title} content={skill.content} />
   ))
 
   return (
@@ -112,7 +112,12 @@ const Home = () => {
             <img src="src/assets/images/stack/sass.png" alt="Sass" />
           </div>
         </div>
-        <div className="skills-cards">{skills}</div>
+        <div className="skills__main flex flex-jc-sb flex-ai-c">
+          <div className="skills__main__pattern">
+            <img src="/src/assets/images/skills-pattern.png" alt="" />
+          </div>
+          <div className="skills__main__cards flex">{skills}</div>
+        </div>
       </section>
     </>
   )
