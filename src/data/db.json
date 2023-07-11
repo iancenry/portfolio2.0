@@ -1,0 +1,53 @@
+{
+  "portfolio": [
+    {
+      "id": 1,
+      "cover": "src/assets/images/portfolio/project-1.png",
+      "title": "ChertNodes",
+      "description": "Minecraft servers hosting",
+      "languages": ["HTML", "SCSS", "Python", "Flask"]
+    },
+    {
+      "id": 2,
+      "cover": "src/assets/images/portfolio/project-2.png",
+      "title": "ProtectX",
+      "description": "Discord anti-crash bot",
+      "languages": ["React", "Express", "HTML", "SCSS", "Python", "Flask"]
+    },
+    {
+      "id": 3,
+      "cover": "src/assets/images/portfolio/project-3.png",
+      "title": "Kahoot Answers Viewer",
+      "description": "Get answers to your kahoot quiz",
+      "languages": ["CSS", "Express", "Node.js"]
+    }
+  ],
+
+  "skills": [
+    {
+      "id": 1,
+      "title": "languages",
+      "": ["TypeScript", "Python", "JavaScript"]
+    },
+    {
+      "id": 2,
+      "title": "databases",
+      "content": ["MySQL", "Mongo", "PostgreSQL", "Firebase"]
+    },
+    {
+      "id": 3,
+      "title": "tools",
+      "content": ["VSCode", "Figma", "Git", "Tailwind", "Postman"]
+    },
+    {
+      "id": 4,
+      "title": "frameworks",
+      "content": ["React", "Express", "Flask"]
+    },
+    {
+      "id": 3,
+      "title": "others",
+      "content": ["HTML", "CSS", "SCSS", "REST", "SQL"]
+    }
+  ]
+}
