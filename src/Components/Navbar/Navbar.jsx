@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import './Navbar.scss'
+import { FaGithub, FaLinkedin, FaDoorOpen } from 'react-icons/fa'
 import { useState } from 'react'
 
 const Navbar = () => {
@@ -7,6 +8,18 @@ const Navbar = () => {
 
   return (
     <header>
+      <div className="social-links flex flex-fd-c">
+        <div className="line" />
+        <Link to="https://github.com/iancenry" target="_blank">
+          <FaGithub color="#abb2bf" fontSize={20} />
+        </Link>
+        <Link to="." target="_blank">
+          <FaLinkedin color="#abb2bf" fontSize={20} />
+        </Link>
+        <Link to=".">
+          <FaDoorOpen color="#abb2bf" fontSize={20} />
+        </Link>
+      </div>
       <nav className="navbar flex flex-jc-sb flex-ai-c">
         <div className="navbar__logo flex">
           <img src="/src/assets/images/logo.png" alt="portfolio logo" />
