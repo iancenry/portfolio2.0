@@ -1,0 +1,19 @@
+@import '../../sass/mixins';
+
+.blog {
+  width: 70%;
+  margin: 3.125rem auto;
+  height: 70svh;
+
+  .coming-soon {
+    width: 70%;
+    margin: 0 auto;
+    > img {
+      width: 100%;
+    }
+  }
+
+  @include breakpoint-down(x-large) {
+    width: 100%;
+  }
+}
