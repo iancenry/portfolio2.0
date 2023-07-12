@@ -75,6 +75,10 @@ body {
   color: #fff;
   font-size: $font-large;
   line-height: 2.635rem;
+
+  @include breakpoint-down(medium) {
+    font-size: $font-med;
+  }
 }
 
 .p__firacode {
@@ -92,6 +96,10 @@ body {
   font-size: $font-med;
   line-height: 2.625rem;
   color: #fff;
+
+  @include breakpoint-down(medium) {
+    font-size: $font-small;
+  }
 }
 
 span {

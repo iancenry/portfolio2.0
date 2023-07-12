@@ -5,11 +5,10 @@ $breakpoints-up: (
   'x-large': '100rem',
 );
 
-//target a viewport and down - 650px, 1023px, 1399px, 1600
+//target a viewport and down - 650px, 1023px(phone), 1600(tablet)
 $breakpoints-down: (
   'small': '40.625rem',
   'medium': '63.9375rem',
-  'large': '87.4375rem',
   'x-large': '100rem',
 );
 
