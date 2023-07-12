@@ -45,6 +45,11 @@ const Navbar = () => {
               <span>#</span>contact
             </Link>
           </li>
+          <li className="p__firacode">
+            <Link to="blog" className="p__firacode">
+              <span>#</span>blog
+            </Link>
+          </li>
         </ul>
         {/* small scrren */}
         <div
@@ -99,6 +104,15 @@ const Navbar = () => {
                     <span>#</span>contact
                   </Link>
                 </li>
+                <li className="p__firacode">
+                  <Link
+                    to="blog"
+                    className="headtext__firacode"
+                    onClick={() => setToggleMenu((prevValue) => !prevValue)}
+                  >
+                    <span>#</span>blog
+                  </Link>
+                </li>
               </ul>
             </div>
           )}
@@ -109,5 +123,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-
-//TODO add blog route
