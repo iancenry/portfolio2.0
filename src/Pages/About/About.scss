@@ -1,0 +1,16 @@
+@import '../../sass/mixins';
+
+.about {
+  &__content {
+    @include breakpoint-down(x-large) {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__info {
+    margin-top: 2rem;
+    flex: 0 0 50%;
+  }
+}

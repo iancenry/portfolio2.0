@@ -1,5 +1,4 @@
 import { useLocation } from 'react-router-dom'
-import './Projects.scss'
 import { SubHeading, ProjectCard, PageHeading } from '../../Components'
 import { useEffect, useState } from 'react'
 
