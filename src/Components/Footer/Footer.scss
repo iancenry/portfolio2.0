@@ -1,0 +1,37 @@
+@import '../../sass/mixins';
+.footer {
+  width: 100%;
+  background: linear-gradient(to right, #616a78, #282c33);
+  padding: 0.875rem 0;
+  border-top-left-radius: 8.125rem;
+  font-size: 0.875rem;
+  line-height: 20px;
+
+  @include breakpoint-down(medium) {
+    margin-top: 2.5rem;
+  }
+
+  &__info {
+    width: 70%;
+    margin: 0 auto;
+
+    @include breakpoint-down(medium) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer__text {
+      .top-text {
+        @include breakpoint-down(medium) {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+  &__media {
+    > a {
+      margin-right: 1rem;
+    }
+  }
+}
