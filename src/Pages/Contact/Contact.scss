@@ -1,0 +1,60 @@
+@import '../../sass/mixins';
+
+.contact {
+  &__content {
+    @include breakpoint-down(x-large) {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__info {
+    margin-top: 2rem;
+    flex: 0 0 50%;
+
+    .contact-details {
+      padding: 1rem;
+      border: 0.0625rem solid #abb2bf;
+      width: fit-content;
+
+      @include breakpoint-down(x-large) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__form {
+    @include breakpoint-down(x-large) {
+      margin-top: 2.5rem;
+      width: 100%;
+    }
+
+    > form {
+      gap: 1.25rem;
+
+      > input,
+      textarea,
+      .top > input {
+        padding: 0.5rem;
+        border: 0.0625rem solid #abb2bf;
+        outline: none;
+        background: #282c33;
+        font-size: 1rem;
+        color: white;
+      }
+
+      .top {
+        gap: 1.25rem;
+
+        @include breakpoint-down(x-large) {
+          justify-content: space-between;
+        }
+
+        @include breakpoint-down(medium) {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
