@@ -2,10 +2,15 @@
 
 .navbar {
   width: 100%;
-  padding: 1rem 20rem;
+  padding: 1rem 18rem;
 
   &__logo {
     height: 1.5rem;
+
+    @include breakpoint-down(medium) {
+      height: 1.3rem;
+    }
+
     > img {
       width: 100%;
     }
@@ -34,6 +39,7 @@
   .btn-hamburger {
     position: absolute;
     right: 10%;
+    top: 2%;
     align-items: end;
     cursor: pointer;
     z-index: 4;

@@ -2,7 +2,7 @@ import './SubHeading.scss'
 
 const SubHeading = ({ subheading }) => {
   return (
-    <p className="h3__firacode subtitle" style={{ fontSize: '2rem' }}>
+    <p className="h3__firacode subtitle">
       <span>#</span>
       {subheading}
     </p>
