@@ -2,10 +2,10 @@ import './SubHeading.scss'
 
 const SubHeading = ({ subheading }) => {
   return (
-    <p className="h3__firacode subtitle">
+    <h3 className="h3__firacode subtitle">
       <span>#</span>
       {subheading}
-    </p>
+    </h3>
   )
 }
 

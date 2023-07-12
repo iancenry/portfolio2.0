@@ -19,6 +19,7 @@ const Home = () => {
       title={portfolio.title}
       description={portfolio.description}
       languages={portfolio.languages}
+      link={portfolio.link}
     />
   ))
 
@@ -85,7 +86,9 @@ const Home = () => {
       <section className="section projects">
         <div className="flex flex-ai-c flex-jc-sb">
           <SubHeading subheading={'projects'} />
-          <Link className="h3__firacode">View all ~~&gt;</Link>
+          <Link to="projects" className="h3__firacode">
+            View all ~~&gt;
+          </Link>
         </div>
         <div className="project-cards">{homePortfolios}</div>
       </section>
@@ -124,3 +127,7 @@ const Home = () => {
 }
 
 export default Home
+
+// TODO export fetches to api.js
+// TODO limit fetch to 3 projects in Home.jsx
+// TODO might switch to loaders and add loading state
