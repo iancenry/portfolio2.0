@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import './ProjectCard.scss'
 import PropTypes from 'prop-types'
 
-const ProjectCard = ({ cover, title, description, languages }) => {
+const ProjectCard = ({ cover, title, description, languages, link }) => {
   return (
     <div className="project-card">
       <div className="project-card__image">
@@ -14,7 +14,7 @@ const ProjectCard = ({ cover, title, description, languages }) => {
       <div className="project-card__info flex flex-fd-c">
         <h3 className="h3__firacode">{title}</h3>
         <p className="p__firacode">{description}</p>
-        <Link className="btn" target="_blank">
+        <Link to={link} className="btn" target="_blank">
           Live ~&gt;
         </Link>
       </div>
@@ -27,6 +27,7 @@ ProjectCard.propTypes = {
   languages: PropTypes.array,
   title: PropTypes.string,
   description: PropTypes.string,
+  link: PropTypes.string,
 }
 
 export default ProjectCard
