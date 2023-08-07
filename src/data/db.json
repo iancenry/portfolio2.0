@@ -3,18 +3,18 @@
     {
       "id": 1,
       "cover": "src/assets/images/portfolio/project-1.png",
-      "title": "ChertNodes",
-      "description": "Minecraft servers hosting",
-      "languages": ["HTML", "SCSS", "Python", "Flask"],
-      "link": "."
+      "title": "Jikoni Restaurant",
+      "description": "Luxury restaurant wesbite",
+      "languages": ["React", "JavaScript", "CSS"],
+      "link": "https://jikoni-restaurant.netlify.app/"
     },
     {
       "id": 2,
       "cover": "src/assets/images/portfolio/project-2.png",
-      "title": "ProtectX",
-      "description": "Discord anti-crash bot",
-      "languages": ["React", "Express", "HTML", "SCSS", "Python", "Flask"],
-      "link": "."
+      "title": "StreamTape",
+      "description": "A youtube video streaming web application",
+      "languages": ["React", "JavaScript", "Material UI", "Axios"],
+      "link": "https://streamtape.netlify.app/"
     },
     {
       "id": 3,
@@ -45,7 +45,7 @@
     {
       "id": 4,
       "title": "Frameworks",
-      "content": ["React", "Express", "Flask"]
+      "content": ["React", "Express"]
     },
     {
       "id": 5,
