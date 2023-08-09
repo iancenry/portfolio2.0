@@ -12,16 +12,18 @@ const Home = () => {
       .then((data) => setData(data))
   }, [])
 
-  const homePortfolios = data?.portfolio.map((portfolio) => (
-    <ProjectCard
-      key={portfolio.id}
-      cover={portfolio.cover}
-      title={portfolio.title}
-      description={portfolio.description}
-      languages={portfolio.languages}
-      link={portfolio.link}
-    />
-  ))
+  const homePortfolios = data?.portfolio
+    .slice(0, 3)
+    .map((portfolio) => (
+      <ProjectCard
+        key={portfolio.id}
+        cover={portfolio.cover}
+        title={portfolio.title}
+        description={portfolio.description}
+        languages={portfolio.languages}
+        link={portfolio.link}
+      />
+    ))
 
   const skills = data?.skills.map((skill) => (
     <SkillsCard key={skill.id} title={skill.title} content={skill.content} />
@@ -129,5 +131,4 @@ const Home = () => {
 export default Home
 
 // TODO export fetches to api.js
-// TODO limit fetch to 3 projects in Home.jsx
 // TODO might switch to loaders and add loading state
