@@ -47,18 +47,14 @@ const Home = () => {
             <Link className="btn p__firacode">Contact me</Link>
           </div>
           <div className="hero__content__image">
-            <img
-              src={personHero}
-              alt=""
-              className="hero-person"
-            />
+            <img src={personHero} alt="" className="hero-person" />
             <img
               src="/src/assets/images/hero-pattern.png"
               alt=""
               className="hero-pattern"
             />
             <img
-              src="/src/assets/images/hero-dots.png"
+              src="../../assets/images/hero-dots.png"
               alt=""
               className="hero-dots"
             />
