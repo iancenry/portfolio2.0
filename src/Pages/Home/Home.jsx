@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import './Home.scss'
 import { SubHeading, ProjectCard, SkillsCard } from '../../Components'
 import { useEffect, useState } from 'react'
+import personHero from '../../assets/images/person-hero.png'
 
 const Home = () => {
   const [data, setData] = useState()
@@ -47,7 +48,7 @@ const Home = () => {
           </div>
           <div className="hero__content__image">
             <img
-              src={`../../assets/images/person-hero.png`}
+              src={personHero}
               alt=""
               className="hero-person"
             />
