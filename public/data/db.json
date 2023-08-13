@@ -18,7 +18,7 @@
     },
     {
       "id": 3,
-      "cover": "/images/portfolio/project-3.png",
+      "cover": "/assets/images/portfolio/project-3.png",
       "title": "Kahoot Answers Viewer",
       "description": "Get answers to your kahoot quiz",
       "languages": ["CSS", "Express", "Node.js"],
