@@ -1,0 +1,56 @@
+{
+  "portfolio": [
+    {
+      "id": 1,
+      "cover": "/src/assets/images/portfolio/project-1.png",
+      "title": "Jikoni Restaurant",
+      "description": "Luxury restaurant wesbite",
+      "languages": ["React", "JavaScript", "CSS"],
+      "link": "https://jikoni-restaurant.netlify.app/"
+    },
+    {
+      "id": 2,
+      "cover": "src/assets/images/portfolio/project-2.png",
+      "title": "StreamTape",
+      "description": "A youtube video streaming web application",
+      "languages": ["React", "JavaScript", "Material UI", "Axios"],
+      "link": "https://streamtape.netlify.app/"
+    },
+    {
+      "id": 3,
+      "cover": "../assets/images/portfolio/project-3.png",
+      "title": "Kahoot Answers Viewer",
+      "description": "Get answers to your kahoot quiz",
+      "languages": ["CSS", "Express", "Node.js"],
+      "link": "."
+    }
+  ],
+
+  "skills": [
+    {
+      "id": 1,
+      "title": "Languages",
+      "content": ["TypeScript", "Python", "JavaScript"]
+    },
+    {
+      "id": 2,
+      "title": "Databases",
+      "content": ["MySQL", "Mongo", "PostgreSQL", "Firebase"]
+    },
+    {
+      "id": 3,
+      "title": "Tools",
+      "content": ["VSCode", "Figma", "Git", "Tailwind", "Postman"]
+    },
+    {
+      "id": 4,
+      "title": "Frameworks",
+      "content": ["React", "Express"]
+    },
+    {
+      "id": 5,
+      "title": "Others",
+      "content": ["HTML", "CSS", "SCSS", "REST", "SQL"]
+    }
+  ]
+}
