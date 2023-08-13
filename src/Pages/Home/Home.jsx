@@ -21,7 +21,7 @@ const Home = () => {
   const [data, setData] = useState()
 
   useEffect(() => {
-    fetch(dbData)
+    fetch('/src/data/db.json')
       .then((res) => res.json())
       .then((data) => setData(data))
   }, [])

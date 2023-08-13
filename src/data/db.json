@@ -2,7 +2,7 @@
   "portfolio": [
     {
       "id": 1,
-      "cover": "../assets/images/portfolio/project-1.png",
+      "cover": "/src/assets/images/portfolio/project-1.png",
       "title": "Jikoni Restaurant",
       "description": "Luxury restaurant wesbite",
       "languages": ["React", "JavaScript", "CSS"],
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "cover": "../assets/images/portfolio/project-2.png",
+      "cover": "src/assets/images/portfolio/project-2.png",
       "title": "StreamTape",
       "description": "A youtube video streaming web application",
       "languages": ["React", "JavaScript", "Material UI", "Axios"],
