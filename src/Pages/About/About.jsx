@@ -1,6 +1,8 @@
 import { useLocation } from 'react-router-dom'
 import { PageHeading } from '../../Components'
 import './About.scss'
+import aboutImage from '../../assets/images/about-img.png'
+
 const About = () => {
   const location = useLocation()
 
@@ -26,7 +28,7 @@ const About = () => {
             </div>
             <div>
               <img
-                src="/src/assets/images/about-img.png"
+                src={aboutImage}
                 alt="anonymous person"
                 className="about-person"
               />

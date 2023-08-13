@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import './Footer.scss'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import logo from '../../assets/images/logo.png'
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
       <div className="footer__info flex flex-jc-sb flex-ai-c">
         <div className="footer__text">
           <div className="top-text flex flex-ai-c">
-            <img src="/src/assets/images/logo.png" alt="" />
+            <img src={logo} alt="" />
             <p
               className="p__firacode"
               style={{ fontSize: '0.875rem', marginLeft: '1rem' }}

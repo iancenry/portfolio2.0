@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import './Navbar.scss'
 import { FaGithub, FaLinkedin, FaDoorOpen } from 'react-icons/fa'
 import { useState } from 'react'
+import logo from '../../assets/images/logo.png'
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
@@ -22,7 +23,7 @@ const Navbar = () => {
       </div>
       <nav className="navbar flex flex-jc-sb flex-ai-c">
         <div className="navbar__logo flex">
-          <img src="/src/assets/images/logo.png" alt="portfolio logo" />
+          <img src={logo} alt="portfolio logo" />
         </div>
         <ul className="navbar__links flex flex-jc-c flex-ai-c hide-for-mobile">
           <li>

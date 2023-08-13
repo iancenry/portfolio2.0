@@ -3,12 +3,24 @@ import './Home.scss'
 import { SubHeading, ProjectCard, SkillsCard } from '../../Components'
 import { useEffect, useState } from 'react'
 import personHero from '../../assets/images/person-hero.png'
+import heroPattern from '../../assets/images/hero-pattern.png'
+import heroDots from '../../assets/images/hero-dots.png'
+import quote from '../../assets/images/quote.png'
+import html from '../../assets/images/stack/html.png'
+import javascript from '../../assets/images/stack/javascript.png'
+import css from '../../assets/images/stack/css.png'
+import react from '../../assets/images/stack/react.png'
+import typescript from '../../assets/images/stack/typescript.png'
+import python from '../../assets/images/stack/python.png'
+import node from '../../assets/images/stack/node-js.png'
+import sass from '../../assets/images/stack/sass.png'
+import skillsPattern from '../../assets/images/skills-pattern.png'
 
 const Home = () => {
   const [data, setData] = useState()
 
   useEffect(() => {
-    fetch('/src/data/db.json')
+    fetch('../../data/db.json')
       .then((res) => res.json())
       .then((data) => setData(data))
   }, [])
@@ -48,16 +60,8 @@ const Home = () => {
           </div>
           <div className="hero__content__image">
             <img src={personHero} alt="" className="hero-person" />
-            <img
-              src="/src/assets/images/hero-pattern.png"
-              alt=""
-              className="hero-pattern"
-            />
-            <img
-              src="../../assets/images/hero-dots.png"
-              alt=""
-              className="hero-dots"
-            />
+            <img src={heroPattern} alt="" className="hero-pattern" />
+            <img src={heroDots} alt="" className="hero-dots" />
             <div className="current-work flex flex-ai-c ">
               <div className="current-work__mini-square" />
               <p className="p__firacode">
@@ -67,16 +71,8 @@ const Home = () => {
           </div>
         </div>
         <div className="hero__quote-wrapper">
-          <img
-            src="/src/assets/images/quote.png"
-            alt=""
-            className="upper-quote"
-          />
-          <img
-            src="/src/assets/images/quote.png"
-            alt=""
-            className="lower-quote"
-          />
+          <img src={quote} alt="" className="upper-quote" />
+          <img src={quote} alt="" className="lower-quote" />
           <p className="h3__firacode">
             With great power comes great electricity bill
           </p>
@@ -98,25 +94,19 @@ const Home = () => {
             <b>Tech Stack | </b>
           </p>
           <div className="skills__tech-stack__logos">
-            <img src="src/assets/images/stack/html.png" alt="Html" />
-            <img
-              src="src/assets/images/stack/javascript.png"
-              alt="JavaScript"
-            />
-            <img src="src/assets/images/stack/css.png" alt="CSS" />
-            <img src="src/assets/images/stack/react.png" alt="React" />
-            <img
-              src="src/assets/images/stack/typescript.png"
-              alt="TypeScript"
-            />
-            <img src="src/assets/images/stack/python.png" alt="Python" />
-            <img src="src/assets/images/stack/node-js.png" alt="Node" />
-            <img src="src/assets/images/stack/sass.png" alt="Sass" />
+            <img src={html} alt="Html" />
+            <img src={javascript} alt="JavaScript" />
+            <img src={css} alt="CSS" />
+            <img src={react} alt="React" />
+            <img src={typescript} alt="TypeScript" />
+            <img src={python} alt="Python" />
+            <img src={node} alt="Node" />
+            <img src={sass} alt="Sass" />
           </div>
         </div>
         <div className="skills__main flex flex-jc-sb flex-ai-c">
           <div className="skills__main__pattern">
-            <img src="/src/assets/images/skills-pattern.png" alt="" />
+            <img src={skillsPattern} alt="" />
           </div>
           <div className="skills__main__cards flex">{skills}</div>
         </div>
