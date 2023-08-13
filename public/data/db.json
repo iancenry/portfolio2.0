@@ -20,7 +20,7 @@
       "id": 3,
       "cover": "/data/portfolio/project-3.png",
       "title": "RU Chat App",
-      "description": "A university chat application",
+      "description": "A university chat application (available on request due to API charges)",
       "languages": ["React", "JavaScript", "CSS", "Express", "Node.js"],
       "link": "https://ru-chat.netlify.app/"
     }
