@@ -18,9 +18,9 @@ import skillsPattern from '../../assets/images/skills-pattern.png'
 
 const Home = () => {
   const [data, setData] = useState()
-
+  ///data/db.json
   useEffect(() => {
-    fetch('/data/db.json')
+    fetch('../../data/db.json')
       .then((res) => res.json())
       .then((data) => setData(data))
   }, [])
