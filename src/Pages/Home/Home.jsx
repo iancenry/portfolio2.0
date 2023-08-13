@@ -21,7 +21,7 @@ const Home = () => {
   const [data, setData] = useState()
 
   useEffect(() => {
-    fetch('../../../public/data/db.json')
+    fetch('dist/data/db.json')
       .then((res) => res.json())
       .then((data) => setData(data))
   }, [])
