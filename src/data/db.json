@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "cover": "src/assets/images/portfolio/project-2.png",
+      "cover": "../../src/assets/images/portfolio/project-2.png",
       "title": "StreamTape",
       "description": "A youtube video streaming web application",
       "languages": ["React", "JavaScript", "Material UI", "Axios"],
