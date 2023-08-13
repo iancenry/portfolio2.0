@@ -15,13 +15,13 @@ import python from '../../assets/images/stack/python.png'
 import node from '../../assets/images/stack/node-js.png'
 import sass from '../../assets/images/stack/sass.png'
 import skillsPattern from '../../assets/images/skills-pattern.png'
-import dbData from '../../data/db.json'
+// import dbData from '../../data/db.json'
 
 const Home = () => {
   const [data, setData] = useState()
 
   useEffect(() => {
-    fetch('dist/data/db.json')
+    fetch('/data/db.json')
       .then((res) => res.json())
       .then((data) => setData(data))
   }, [])
