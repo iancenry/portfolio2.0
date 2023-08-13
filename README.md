@@ -1,5 +1,7 @@
 # Portfolio Website
 
+![Capture](https://github.com/iancenry/portfolio2.0/assets/77986239/9616beb7-ac09-4072-9209-1c2b7a597829)
+
 ## Quick Setup
 
 1. Fork then clone the project into local machine 🍴
